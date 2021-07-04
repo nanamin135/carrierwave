@@ -1,13 +1,14 @@
     <%= link_to "記事一覧へ戻る",articles_path %>
     <%= form_for @article  do |f| %>
 
-        <% #titleはデータベースと関係している %>
+        <%#titleはデータベースと関係している %>
         <%= f.text_field :title ,:size => "40" %> <br>
-        <% #textと言うデータベースのカラム名 %>
+        <%#textと言うデータベースのカラム名 %>
         <%= f.text_area :text %> <br>
-            <% #CarrierWave %>
-            <%= form.label :avatar_path %>
-            <%= form.file_field :avatar_path, id: :user_avatar_path %>
-        <% #submitは入力されたデータを引き連れてformタグに指定したページへ飛ぶためのボタン %>
+            <%#CarrierWave %>
+            <%#fで回してるのでformじゃなくてf %>
+            <%= f.label :avatar_path %>
+            <%= f.file_field :avatar_path, id: :user_avatar_path %>
+        <%#submitは入力されたデータを引き連れてformタグに指定したページへ飛ぶためのボタン %>
         <%= f.submit %>
     <% end %>
