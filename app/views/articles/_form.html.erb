@@ -5,6 +5,9 @@
         <%= f.text_field :title ,:size => "40" %> <br>
         <% #textと言うデータベースのカラム名 %>
         <%= f.text_area :text %> <br>
+            <% #CarrierWave %>
+            <%= form.label :avatar_path %>
+            <%= form.file_field :avatar_path, id: :user_avatar_path %>
         <% #submitは入力されたデータを引き連れてformタグに指定したページへ飛ぶためのボタン %>
         <%= f.submit %>
     <% end %>
