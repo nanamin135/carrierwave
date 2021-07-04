@@ -6,8 +6,8 @@
     <% #本文は%=をつける %>
     <% #article_path()と書いてあげることでオブジェクトを渡してあげる articleを一つ一つ取り出してarticleと言う変数に渡してあげる %>
     <h2><%= link_to article.title, article_path(article)%></h2>
-    <% if article.image.url.present? %>
-        <%= image_tag article.image.url %>
+    <% if article.image.small.present? %>
+        <%= image_tag article.image.small.url %>
     <% end %>
     <p><%= article.text %></p>
     <% #edit_article_path()の横のかっこはスペースを空けないこと %>

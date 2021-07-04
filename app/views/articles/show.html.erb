@@ -1,7 +1,7 @@
     <strong>Avatar path:</strong>
     <%= @article.image %>
     <% if @article.image.url.present?%>
-        <%= image_tag @article.image.url %>
+        <%= image_tag @article.image.url,class: 'image' %>
     <% end %>
 <h1> <%= @article.title %> </h1>
 <p> <%= @article.text %> </p>

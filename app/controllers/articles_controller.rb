@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
     before_action :authenticate_user!
     def index
         #@articles = Article.all
-        @articles = current_user.articles
+        @articles = current_user.articles.order(id: :desc)
     end
     def show
         
