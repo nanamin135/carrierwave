@@ -29,7 +29,7 @@ body{
     color:white;
 }
 #content{
-    width:800px;
+    width:700px;
     /* display:inline-blockで文字を中央揃えにできる; */
     display:inline-block;
 }

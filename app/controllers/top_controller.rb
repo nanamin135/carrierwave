@@ -3,6 +3,6 @@ class TopController < ApplicationController
     # controllerで定義されるメソッドをアクションという
     def index
         #インスタンス変数
-        @rem="Railsブログへようこそ"
+        @title="Railsブログへようこそ"
     end    
 end

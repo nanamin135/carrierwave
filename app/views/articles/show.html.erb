@@ -1,8 +1,9 @@
-    <strong>Avatar path:</strong>
-    <%= @article.image %>
+    
+    <h1> <%= @article.title %> </h1>
+    <%#imageのパスの表示%>
+    <%#@article.image %>
     <% if @article.image.url.present?%>
         <%= image_tag @article.image.url,class: 'image' %>
     <% end %>
-<h1> <%= @article.title %> </h1>
 <p> <%= @article.text %> </p>
 <%= link_to "記事一覧に戻る",articles_path %>

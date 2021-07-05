@@ -14,7 +14,7 @@ class ImageUploader < CarrierWave::Uploader::Base
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
   version :small do
-    process resize_to_fill: [500,300, "Center"]
+    process resize_to_fill: [700,400, "Center"]
   end
 
   version :middle do
